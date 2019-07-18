@@ -1,8 +1,19 @@
+"""
+magic function that profile any statement as a dot graph using cProfile, gprof2dot and graphviz
+%gprof2dot print('hello world')
+
+should give you a nice dot profile rendered as svg
+"""
+
+__version__ = '0.1'
+
+
 import cProfile
 import gprof2dot as gprof2dot_source
 import sys
 from graphviz import Source
 import tempfile
+import os
 from IPython.core.magic import register_line_magic
 
 @register_line_magic
