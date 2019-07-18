@@ -5,7 +5,7 @@ magic function that profile any statement as a dot graph using cProfile, gprof2d
 should give you a nice dot profile rendered as svg
 """
 
-__version__ = '0.2'
+__version__ = '0.3'
 
 
 import cProfile
@@ -22,6 +22,7 @@ def gprof2dot(line):
     with tempfile.NamedTemporaryFile(suffix='.pstats') as tf:
         tf_directory = os.path.dirname(tf.name)
         tf_basename = os.path.basename(tf.name)
+        tf_name_no_ext = os.path.splitext(tf_basename)[0]
         dot_fp = os.path.join(tf_directory, '{}.dot'.format(tf_name_no_ext))
 
         cProfile.run(statement=line, filename=tf.name)
