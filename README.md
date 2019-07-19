@@ -1,5 +1,5 @@
 # gprof2dot_magic
-Magic function for gprof2dot to profile any statement as a dot graph
+Magic function for gprof2dot to profile any statement as a DOT graph
 
 
 # installation
@@ -9,16 +9,16 @@ Make sure you've the Python package `gprof2dot_magic`.
 pip install gprof2dot_magic
 ```
 
-Its dependencies `gprof2dot` and `graphviz` will be automatically installed as well
+Its dependencies `gprof2dot` and `graphviz` will be installed as well
 
 # usage
-Enable the magic function by using the gprof2dot_magic module on a line statement
+To enable the magic function, first load the gprof2dot_magic module
 
 ```python
 %load_ext gprof2dot_magic
 ```
 
-and then use the magic on a line statement to profile the statement as a dot graph:
+and then the profile magic can be used on a line statement as a DOT graph as such:
 
 ```python
 %gprof2dot print('hello world')
