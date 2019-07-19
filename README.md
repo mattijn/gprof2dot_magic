@@ -12,7 +12,7 @@ pip install gprof2dot_magic
 Its dependencies `gprof2dot` and `graphviz` will be installed as well
 
 # usage
-To enable the magic function, first load the gprof2dot_magic module
+To enable the magic function, first load the `gprof2dot_magic` module
 
 ```python
 %load_ext gprof2dot_magic
