@@ -1,5 +1,5 @@
 # gprof2dot_magic
-Magic function for `gprof2dot` to profile any statement as a DOT graph in JupyterLab or Jupyter Notebook.
+Magic function for `gprof2dot` to profile any Python statement as a DOT graph in JupyterLab or Jupyter Notebook.
 
 <img src="./img/30441189-B028-4C44-BA31-47D813EA2EFE.gif">
 
