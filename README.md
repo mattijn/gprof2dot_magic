@@ -18,7 +18,7 @@ To enable the magic function, first load the gprof2dot_magic module
 %load_ext gprof2dot_magic
 ```
 
-and then the profile any line statement as a DOT graph as such:
+and then profile any line statement as a DOT graph as such:
 
 ```python
 %gprof2dot print('hello world')
