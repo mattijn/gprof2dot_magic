@@ -9,8 +9,32 @@ Make sure you've the Python package `gprof2dot_magic`.
 ```
 pip install gprof2dot_magic
 ```
+This will also install its dependencies `gprof2dot` and `graphviz`.
 
-Its dependencies `gprof2dot` and `graphviz` will be installed as well
+It is also important to have the Graphviz software installed.
+
+Apperently you can use conda as such (I don't have conda):
+
+```
+conda install python-graphviz
+```
+
+Without conda 
+
+For macOS:
+
+```brew
+brew install graphviz
+```
+
+For Windows ([source](https://stackoverflow.com/a/44005139/2459096)):
+
+- Install windows package from: https://graphviz.gitlab.io/_pages/Download/Download_windows.html
+- Add `C:\Program Files (x86)\Graphviz2.38\bin` to User path
+- Add `C:\Program Files (x86)\Graphviz2.38\bin\dot.exe` to System Path
+
+Note: close your "cmd" in which jupyter lab/notebook is running. Existing running CMD dont catch the new changes in Environment variables
+
 
 # usage
 To enable the magic function, first load the `gprof2dot_magic` module
