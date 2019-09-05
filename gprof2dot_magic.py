@@ -5,7 +5,7 @@ magic function that profile any statement as a dot graph using cProfile, gprof2d
 should give you a nice dot profile rendered as svg
 """
 
-__version__ = '0.3'
+__version__ = '0.4'
 
 
 import cProfile
